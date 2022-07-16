@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:orientation="vertical">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/lf30_editor_n2e63xep"></com.airbnb.lottie.LottieAnimationView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="327dp"
+        android:layout_height="441dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/balamportada" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="135dp"
+        android:fontFamily="@font/feather"
+        android:text="Balam Lingua"
+        android:textColor="#1C4AB0"
+        android:textSize="42dp" />
+
+</RelativeLayout>

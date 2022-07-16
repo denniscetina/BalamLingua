@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.activityApuntesSaludos"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bix a beel"
+                    android:layout_marginRight="44dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/feather"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cómo está?"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/feather"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_volume_up_24"
+                    android:layout_marginLeft="86dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bix a k'aaba'"
+                    android:layout_marginRight="18dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/feather"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cómo te llamas?"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/feather"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_volume_up_24"
+                    android:layout_marginLeft="40dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18dp"
+                    android:fontFamily="@font/feather"
+                    android:text="Ma'alob áak'ab"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Buenas noches"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/feather"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_volume_up_24"
+                    android:layout_marginLeft="60dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="118dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18dp"
+                    android:text="Ma'alob chúumuk K'iin"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/feather"/>
+
+                <TextView
+                    android:layout_width="118dp"
+                    android:layout_height="wrap_content"
+                    android:text="Buenas tardes (Medio día)"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/feather"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_volume_up_24"
+                    android:layout_marginLeft="76dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18dp"
+                    android:text="Ma'alob chíinil K'iin"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/feather"/>
+
+                <TextView
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    android:text="Buenas tardes (Después del mediodía)"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/feather"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_volume_up_24"
+                    android:layout_marginLeft="46dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ma'alob K'iin"
+                    android:layout_marginRight="18dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/feather"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cómo te llamas?"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/feather"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_volume_up_24"
+                    android:layout_marginLeft="36dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="212dp"
+                android:layout_height="216dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="48dp"
+                android:src="@drawable/balamtranquilo" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
