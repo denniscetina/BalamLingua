@@ -18,6 +18,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.balamlingua.R;
+import com.example.balamlingua.activityLeccion;
 import com.example.balamlingua.databinding.FragmentHomeBinding;
 import com.orhanobut.dialogplus.DialogPlus;
 import com.orhanobut.dialogplus.ViewHolder;
@@ -26,7 +27,7 @@ public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
     private FragmentHomeBinding binding;
-    private CardView saludos,numeros,tiempos;
+    private CardView saludos, numeros, tiempos;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -35,29 +36,93 @@ public class HomeFragment extends Fragment {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-        saludos = (CardView)binding.btnSaludos;
+        saludos = (CardView) binding.btnSaludos;
+        numeros = (CardView) binding.btnNumeros;
+        tiempos = (CardView) binding.btnTiempos;
         saludos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 final DialogPlus dialogPlus = DialogPlus.newDialog(getActivity()).setContentHolder(new ViewHolder(R.layout.update_popup))
                         .setCancelable(true).setGravity(Gravity.CENTER).
-                                setBackgroundColorResId(R.drawable.rounded).create();
-                //dialogPlus.show();
-                View view1 =dialogPlus.getHolderView();
-                //EditText nombre = view1.findViewById(R.id.txtNombre);
-               // EditText cantidad = view1.findViewById(R.id.txtCantidad);
-               // EditText precio = view1.findViewById(R.id.txtPrecio);
-               Button btnSubir = view1.findViewById(R.id.btnApuntes);
+                        setBackgroundColorResId(R.drawable.rounded).create();
+                View view1 = dialogPlus.getHolderView();
+                Button btnSubir = view1.findViewById(R.id.btnApuntes);
+                Button btnEmpezar = view1.findViewById(R.id.btnEmpezar);
+                dialogPlus.show();
+                btnSubir.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(getActivity(), activityApuntesSaludos.class);
+                        intent.putExtra("category", 1);
+                        intent.putExtra("", 1);
+                        startActivity(intent);
+                    }
+                });
+                btnEmpezar.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(getActivity(), activityLeccion.class);
+                        intent.putExtra("category", 1);
+                        startActivity(intent);
+                        dialogPlus.dismiss();
+                    }
+                });
 
-                //nombre.setText(model.getNombre());
-               // cantidad.setText(model.getCantidad());
-               // precio.setText(model.getPrecio());
+            }
+        });
+         tiempos.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 final DialogPlus dialogPlus = DialogPlus.newDialog(getActivity()).setContentHolder(new ViewHolder(R.layout.update_popup))
+                         .setCancelable(true).setGravity(Gravity.CENTER).
+                         setBackgroundColorResId(R.drawable.rounded).create();
+                 View view1 = dialogPlus.getHolderView();
+                 Button btnSubir = view1.findViewById(R.id.btnApuntes);
+                 Button btnEmpezar = view1.findViewById(R.id.btnEmpezar);
+                 dialogPlus.show();
+                 btnSubir.setOnClickListener(new View.OnClickListener() {
+                     @Override
+                     public void onClick(View view) {
+                         Intent intent = new Intent(getActivity(), activityApuntesSaludos.class);
+                         startActivity(intent);
+                     }
+                 });
+                 btnEmpezar.setOnClickListener(new View.OnClickListener() {
+                     @Override
+                     public void onClick(View view) {
+                         Intent intent = new Intent(getActivity(), activityLeccion.class);
+                         intent.putExtra("category", 2);
+                         startActivity(intent);
+                         dialogPlus.dismiss();
+                     }
+                 });
+
+             }
+         });
+        numeros.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final DialogPlus dialogPlus = DialogPlus.newDialog(getActivity()).setContentHolder(new ViewHolder(R.layout.update_popup))
+                        .setCancelable(true).setGravity(Gravity.CENTER).
+                        setBackgroundColorResId(R.drawable.rounded).create();
+                View view1 = dialogPlus.getHolderView();
+                Button btnSubir = view1.findViewById(R.id.btnApuntes);
+                Button btnEmpezar = view1.findViewById(R.id.btnEmpezar);
                 dialogPlus.show();
                 btnSubir.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         Intent intent = new Intent(getActivity(), activityApuntesSaludos.class);
                         startActivity(intent);
+                    }
+                });
+                btnEmpezar.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(getActivity(), activityLeccion.class);
+                        intent.putExtra("category", 3);
+                        startActivity(intent);
+                        dialogPlus.dismiss();
                     }
                 });
 

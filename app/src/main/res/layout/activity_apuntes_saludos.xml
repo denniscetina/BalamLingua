@@ -9,162 +9,207 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="8dp">
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_margin="12dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Bix a beel"
-                    android:layout_marginRight="44dp"
-                    android:textSize="18dp"
-                    android:fontFamily="@font/feather"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="¿Cómo está?"
-                    android:textSize="18dp"
-                    android:fontFamily="@font/feather"/>
+                android:layout_marginBottom="18dp">
                 <ImageView
+                    android:id="@+id/audio1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_volume_up_24"
-                    android:layout_marginLeft="86dp"/>
+                    android:layout_marginRight="20dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bix a beel"
+                        android:layout_marginRight="44dp"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/feather"/>
+                    <TextView
+                        android:id="@+id/audioText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="¿Cómo estás?"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/feather"/>
+                </LinearLayout>
+
+
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Bix a k'aaba'"
-                    android:layout_marginRight="18dp"
-                    android:textSize="18dp"
-                    android:fontFamily="@font/feather"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="¿Cómo te llamas?"
-                    android:textSize="18dp"
-                    android:fontFamily="@font/feather"/>
+                android:layout_marginBottom="18dp">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_volume_up_24"
-                    android:layout_marginLeft="40dp"/>
+                    android:layout_marginRight="20dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bix a beel"
+                        android:layout_marginRight="44dp"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/feather"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="¿Cómo estás?"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/feather"/>
+                </LinearLayout>
+
+
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:layout_width="116dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="18dp"
-                    android:fontFamily="@font/feather"
-                    android:text="Ma'alob áak'ab"
-                    android:textSize="18dp" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Buenas noches"
-                    android:textSize="18dp"
-                    android:fontFamily="@font/feather"/>
+                android:layout_marginBottom="18dp">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_volume_up_24"
-                    android:layout_marginLeft="60dp"/>
+                    android:layout_marginRight="20dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bix a beel"
+                        android:layout_marginRight="44dp"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/feather"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="¿Cómo está?"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/feather"/>
+                </LinearLayout>
+
+
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:layout_width="118dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="18dp"
-                    android:text="Ma'alob chúumuk K'iin"
-                    android:textSize="18dp"
-                    android:fontFamily="@font/feather"/>
-
-                <TextView
-                    android:layout_width="118dp"
-                    android:layout_height="wrap_content"
-                    android:text="Buenas tardes (Medio día)"
-                    android:textSize="18dp"
-                    android:fontFamily="@font/feather"/>
+                android:layout_marginBottom="18dp">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_volume_up_24"
-                    android:layout_marginLeft="76dp"/>
+                    android:layout_marginRight="20dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bix a beel"
+                        android:layout_marginRight="44dp"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/feather"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="¿Cómo está?"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/feather"/>
+                </LinearLayout>
+
+
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:layout_width="121dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="18dp"
-                    android:text="Ma'alob chíinil K'iin"
-                    android:textSize="18dp"
-                    android:fontFamily="@font/feather"/>
-
-                <TextView
-                    android:layout_width="145dp"
-                    android:layout_height="wrap_content"
-                    android:text="Buenas tardes (Después del mediodía)"
-                    android:textSize="18dp"
-                    android:fontFamily="@font/feather"/>
+                android:layout_marginBottom="18dp">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_volume_up_24"
-                    android:layout_marginLeft="46dp"
-                    />
+                    android:layout_marginRight="20dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bix a beel"
+                        android:layout_marginRight="44dp"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/feather"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="¿Cómo está?"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/feather"/>
+                </LinearLayout>
+
+
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Ma'alob K'iin"
-                    android:layout_marginRight="18dp"
-                    android:textSize="18dp"
-                    android:fontFamily="@font/feather"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="¿Cómo te llamas?"
-                    android:textSize="18dp"
-                    android:fontFamily="@font/feather"/>
+                android:layout_marginBottom="18dp">
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_baseline_volume_up_24"
-                    android:layout_marginLeft="36dp"/>
+                    android:layout_marginRight="20dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bix a beel"
+                        android:layout_marginRight="44dp"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/feather"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="¿Cómo está?"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/feather"/>
+                </LinearLayout>
+
+
+
             </LinearLayout>
 
             <ImageView
